@@ -42,6 +42,18 @@ export default function About() {
         
         <div className="space-y-12 animate-fadeInUp">
           <div className="group">
+            <h3 className="text-white text-lg mb-1">Senior Backend Engineer</h3>
+            <p className="text-gray-500 text-sm mb-2">
+              <a href="https://www.bujeti.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Bujeti</a> • Nigeria
+            </p>
+            <p className="text-gray-500 text-sm mb-4">February 2024 – Present • Remote</p>
+            <ul className="text-gray-400 space-y-2 list-disc list-inside">
+              <li>Developing comprehensive tax management system for African businesses</li>
+              <li>Implemented Slack integration for seamless expense notifications and approvals</li>
+            </ul>
+          </div>
+
+          <div className="group">
             <h3 className="text-white text-lg mb-1">Backend Engineer</h3>
             <p className="text-gray-500 text-sm mb-2">
               <a href="https://mietz.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Mietz</a> • Germany

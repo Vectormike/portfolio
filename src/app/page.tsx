@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-ic
 export default function Home() {
   return (
     <main className="flex flex-col justify-between min-h-screen bg-black relative">
-      <div className="absolute top-8 right-8 md:top-12 md:right-12">
+      <div className="absolute top-20 right-4 md:top-12 md:right-12 z-50">
         <a
           href="https://docs.google.com/document/d/1BnIUSXU00IDBfDOg1g8ChNXKKPu218PdbDeohC0wLAs/edit?usp=sharing"
           target="_blank"
