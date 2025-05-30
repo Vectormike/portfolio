@@ -2,8 +2,8 @@ import { Experience, Project, Skill, SocialLinks } from '@/types';
 
 export const personalInfo = {
   name: 'Victor Jonah',
-  title: 'Senior Backend Engineer at Bujeti',
-  idiom: 'Building scalable systems, one line at a time.'
+  title: 'Backend Engineer',
+  idiom: 'building scalable systems, one line at a time.'
 };
 
 export const experiences: Experience[] = [
