@@ -30,7 +30,7 @@ async function getArticleData(slug: string) {
       frontmatter,
       content,
     };
-  } catch (error) {
+  } catch {
     throw new Error(`Article not found: ${slug}`);
   }
 }
@@ -61,7 +61,7 @@ export default async function Article({ params }: ArticleProps) {
         <ArticleContent content={content} frontmatter={frontmatter} />
       </main>
     );
-  } catch (error) {
+  } catch {
     notFound();
   }
 } 
