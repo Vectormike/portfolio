@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="animate-fadeInUp">
           <h2 className="text-3xl font-bold text-white mb-8">Get In Touch</h2>
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-            I'm always open to new opportunities and collaborations.
+            I&apos;m always open to new opportunities and collaborations.
           </p>
         </div>
         

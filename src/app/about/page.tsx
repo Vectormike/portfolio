@@ -22,8 +22,8 @@ export default function About() {
 
         <div className="space-y-6 text-gray-400 animate-fadeInUp">
           <p className="text-xl">
-            <strong className="text-white">Hey, I'm Victor Jonah</strong>
-            {" "}I'm a Backend Engineer with 5 years of experience in building scalable systems.
+            <strong className="text-white">Hey, I&apos;m Victor Jonah</strong>
+            {" "}I&apos;m a Backend Engineer with 5 years of experience in building scalable systems.
           </p>
 
           <p>
@@ -33,8 +33,8 @@ export default function About() {
           </p>
 
           <p>
-            I'm passionate about <strong className="text-white">system design</strong>, microservices architecture, 
-            and optimizing for scale. When I'm not coding, I enjoy contributing to open source and sharing knowledge.
+            I&apos;m passionate about <strong className="text-white">system design</strong>, microservices architecture, 
+            and optimizing for scale. When I&apos;m not coding, I enjoy contributing to open source and sharing knowledge.
           </p>
         </div>
 
