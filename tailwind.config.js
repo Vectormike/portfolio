@@ -41,7 +41,41 @@ module.exports = {
         'float': 'float 3s ease-in-out infinite',
         'pulse-scale': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         fadeInUp: 'fadeInUp 0.5s ease-out forwards',
-      }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: {
+              backgroundColor: '#1a1a1a',
+              color: '#e5e5e5',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              marginTop: '1rem',
+              marginBottom: '1rem',
+              overflow: 'auto',
+            },
+            code: {
+              backgroundColor: '#1a1a1a',
+              color: '#e5e5e5',
+              padding: '0.2rem 0.4rem',
+              borderRadius: '0.25rem',
+              fontWeight: '400',
+            },
+            'code::before': {
+              content: '""',
+            },
+            'code::after': {
+              content: '""',
+            },
+            blockquote: {
+              borderLeftColor: '#3b82f6',
+              backgroundColor: '#1a1a1a',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [

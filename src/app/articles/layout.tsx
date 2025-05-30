@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import 'highlight.js/styles/github-dark.css';
 
 export const metadata: Metadata = {
   title: 'Articles | Victor Jonah',

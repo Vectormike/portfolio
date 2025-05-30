@@ -3,26 +3,19 @@ import path from 'path';
 import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import ArticleContent from '@/components/ArticleContent';
 
 interface ArticleProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export async function generateMetadata({ params }: ArticleProps): Promise<Metadata> {
-  try {
-    const article = await getArticleData(params.slug);
-    return {
-      title: article.frontmatter.title,
-      description: article.frontmatter.description,
-    };
-  } catch {
-    return {
-      title: 'Article Not Found',
-      description: 'The requested article could not be found.',
-    };
-  }
+interface ArticleFrontmatter {
+  title: string;
+  date: string;
+  readTime: string;
+  description: string;
 }
 
 async function getArticleData(slug: string) {
@@ -30,7 +23,8 @@ async function getArticleData(slug: string) {
   
   try {
     const fileContents = fs.readFileSync(filePath, 'utf8');
-    const { data: frontmatter, content } = matter(fileContents);
+    const { data, content } = matter(fileContents);
+    const frontmatter = data as ArticleFrontmatter;
     
     return {
       frontmatter,
@@ -41,27 +35,30 @@ async function getArticleData(slug: string) {
   }
 }
 
+export async function generateMetadata({ params }: ArticleProps): Promise<Metadata> {
+  try {
+    const resolvedParams = await params;
+    const article = await getArticleData(resolvedParams.slug);
+    return {
+      title: `${article.frontmatter.title} | Victor Jonah`,
+      description: article.frontmatter.description,
+    };
+  } catch {
+    return {
+      title: 'Article Not Found | Victor Jonah',
+      description: 'The requested article could not be found.',
+    };
+  }
+}
+
 export default async function Article({ params }: ArticleProps) {
   try {
-    const { frontmatter, content } = await getArticleData(params.slug);
+    const resolvedParams = await params;
+    const { frontmatter, content } = await getArticleData(resolvedParams.slug);
 
     return (
       <main className="min-h-screen bg-black px-6 py-24 md:py-32">
-        <article className="max-w-3xl mx-auto prose prose-invert">
-          <h1 className="text-4xl font-bold text-white mb-4 animate-fadeInUp">
-            {frontmatter.title}
-          </h1>
-          
-          <div className="flex items-center text-sm text-gray-500 mb-12 space-x-4 animate-fadeInUp">
-            <span>{frontmatter.date}</span>
-            <span>•</span>
-            <span>{frontmatter.readTime}</span>
-          </div>
-          
-          <div className="text-gray-300 leading-relaxed animate-fadeInUp">
-            {content}
-          </div>
-        </article>
+        <ArticleContent content={content} frontmatter={frontmatter} />
       </main>
     );
   } catch (error) {
