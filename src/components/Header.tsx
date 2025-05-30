@@ -7,10 +7,9 @@ const Header = () => {
   const pathname = usePathname();
 
   const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Articles', href: '/articles' },
+    { label: 'about', href: '/about' },
+    { label: 'projects', href: '/projects' },
+    { label: 'articles', href: '/articles' },
   ];
 
   return (
@@ -30,11 +29,19 @@ const Header = () => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`text-sm uppercase tracking-wider transition-colors ${
-                  pathname === item.href ? 'text-white' : 'text-gray-400 hover:text-white'
+                className={`text-sm tracking-wider transition-colors ${
+                  pathname === item.href 
+                    ? 'text-white' 
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
-                {item.label}
+                <div className={`${
+                  pathname === item.href 
+                    ? 'w-3/4 mx-auto border-b-2 border-white pb-1' 
+                    : ''
+                }`}>
+                  {item.label}
+                </div>
               </Link>
             </li>
           ))}
