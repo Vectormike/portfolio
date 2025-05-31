@@ -78,6 +78,6 @@ export const skills: Skill[] = [
 export const socialLinks: SocialLinks = {
   github: 'https://github.com/Vectormike',
   linkedin: 'https://linkedin.com/in/victor-jonah',
-  twitter: 'https://twitter.com/Vectormike',
+  twitter: 'https://twitter.com/Vectormike_',
   email: 'victorjonah199@gmail.com'
 }; 
