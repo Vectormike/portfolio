@@ -58,7 +58,7 @@ export default function About() {
             <p className="text-gray-500 text-sm mb-2">
               <a href="https://mietz.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Mietz</a> • Germany
             </p>
-            <p className="text-gray-500 text-sm mb-4">Aug 2023 – January 2025 • Remote</p>
+            <p className="text-gray-500 text-sm mb-4">Feb 2023 – January 2025 • Remote</p>
             <ul className="text-gray-400 space-y-2 list-disc list-inside">
               <li>Developed an OCR solution on AWS Lambda, reducing tenant verification from days to 10 seconds max</li>
               <li>Created a scheduling system for tenant-landlord apartment viewings, boosting booking efficiency by 25%</li>
@@ -97,7 +97,7 @@ export default function About() {
             <p className="text-gray-500 text-sm mb-2">
               <a href="https://crenet.io" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Crenet</a> • Nigeria
             </p>
-            <p className="text-gray-500 text-sm mb-4">Aug 2020 – Apr 2022 • Remote</p>
+            <p className="text-gray-500 text-sm mb-4">Aug 2019 – Apr 2022 • Remote</p>
             <ul className="text-gray-400 space-y-2 list-disc list-inside">
               <li>Delivered APIs for an Expense and Requisition Management System, improving workflows by 40%</li>
               <li>Enhanced data management for a Hospital Management System with robust endpoints, reducing workload in the Hospital by 90%</li>
