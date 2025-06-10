@@ -23,6 +23,24 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    title: 'Jobby - AI-Powered Job Application Assistant',
+    description: 'Chrome extension that uses AI (ChatGPT/DeepSeek) to automate job applications. Features include automatic form filling, AI-powered response generation, and secure API key management.',
+    technologies: ['TypeScript', 'Chrome Extension', 'OpenAI', 'DeepSeek', 'Webpack'],
+    link: 'https://github.com/Vectormike/jobby'
+  },
+  {
+    title: 'Bank Statement Analyzer',
+    description: 'AI-powered tool for analyzing bank statements, extracting transaction patterns, and providing financial insights. Built with TypeScript and modern AI technologies for automated financial document processing.',
+    technologies: ['TypeScript', 'Node.js', 'AI', 'Financial Analysis'],
+    link: 'https://github.com/Vectormike/bank-statement-analyzer'
+  },
+  {
+    title: 'WhispAI',
+    description: 'A Python-based backend API that integrates WhatsApp with AI capabilities.',
+    technologies: ['Python', 'Twilio API', 'LLaMA', 'Langchain', 'FastAPI'],
+    link: 'https://github.com/Vectormike/WhispAI'
+  },
+  {
     title: 'Mietz - Property Management Platform',
     description: 'Developed an OCR solution for tenant verification and a scheduling system for apartment viewings. Built with AWS Lambda and serverless architecture, reducing verification time from days to seconds.',
     technologies: ['Node.js', 'AWS Lambda', 'TypeScript', 'OCR', 'Serverless'],
