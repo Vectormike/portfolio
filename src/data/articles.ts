@@ -9,6 +9,14 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    title: "5 top Go web frameworks",
+    date: "Apr 3, 2025",
+    readTime: "15 min read",
+    description: "Looking for the best Go frameworks? Compare the top 8 Go web frameworks for 2025, including Gin, Fiber, Echo, and Beego, with pros, cons, and performance insights.",
+    slug: "go-web-frameworks",
+    category: "Go"
+  },
+  {
     title: "5 Rust Game Engines To Consider For Your Next Project",
     date: "Dec 22, 2023",
     readTime: "6 min read",
@@ -49,6 +57,14 @@ export const articles: Article[] = [
     category: "Blockchain"
   },
   {
+    title: "How JavaScript Works: Implementation of gRPC in a Nodejs application",
+    date: "Apr 21, 2022",
+    readTime: "14 min read",
+    description: "Learn about implementing gRPC in Node.js applications, including protocol buffers, service definitions, and different communication patterns.",
+    slug: "grpc-nodejs-implementation",
+    category: "Backend"
+  },
+  {
     title: "Node.js Logging Best Practices: Essential Guide",
     date: "Mar 31, 2022",
     readTime: "5 min read",
@@ -65,12 +81,28 @@ export const articles: Article[] = [
     category: "Blockchain"
   },
   {
+    title: "How JavaScript Works: Streams and their use cases",
+    date: "Mar 15, 2022",
+    readTime: "12 min read",
+    description: "Explore Node.js streams, their types, and practical use cases for handling data efficiently in your applications.",
+    slug: "nodejs-streams-use-cases",
+    category: "Node.js"
+  },
+  {
     title: "Is Go Overtaking Node.js?",
     date: "Mar 16, 2022",
     readTime: "4 min read",
     description: "See how Go and Node.js approach different situations, understand their scalability, and answer the question, 'Is Go overtaking Node.js.'",
     slug: "go-vs-nodejs",
     category: "Backend"
+  },
+  {
+    title: "How JavaScript Works: Building a child process in Node.js",
+    date: "Feb 28, 2022",
+    readTime: "10 min read",
+    description: "Master the art of creating and managing child processes in Node.js for better performance and parallel processing.",
+    slug: "nodejs-child-processes",
+    category: "Node.js"
   },
   {
     title: "Using Redis Pub/Sub With Node.js",
@@ -89,12 +121,36 @@ export const articles: Article[] = [
     category: "Blockchain"
   },
   {
+    title: "How JavaScript Works: Deploying a Nodejs application with Kubernetes",
+    date: "Sep 28, 2022",
+    readTime: "8 min read",
+    description: "A comprehensive guide on deploying Node.js applications using Kubernetes, covering container orchestration, Docker setup, and Kubernetes deployment configurations.",
+    slug: "nodejs-kubernetes-deployment",
+    category: "DevOps"
+  },
+  {
     title: "Top 5 Decentralized App Development Frameworks",
     date: "Nov 19, 2021",
     readTime: "11 min read",
     description: "We compare popular decentralized frameworks used by blockchain engineers, including benefits, disadvantages, and networks.",
     slug: "dapp-frameworks",
     category: "Blockchain"
+  },
+  {
+    title: "How JavaScript Works: Lists vs Blockchain + implementation practices",
+    date: "Oct 22, 2021",
+    readTime: "10 min read",
+    description: "Compare Linked Lists and Blockchain data structures, their implementations, and practical use cases in JavaScript.",
+    slug: "lists-vs-blockchain",
+    category: "Data Structures"
+  },
+  {
+    title: "How JavaScript Works: Stacks and Queues + tips for efficient implementation",
+    date: "Oct 14, 2021",
+    readTime: "11 min read",
+    description: "Learn about Stacks and Queues data structures, their implementations, and best practices for efficient usage in JavaScript.",
+    slug: "stacks-and-queues",
+    category: "Data Structures"
   },
   {
     title: "Comparing Go Debugging Tools",
@@ -105,20 +161,20 @@ export const articles: Article[] = [
     category: "Go"
   },
   {
-    title: "Understanding Protocols in Swift",
-    date: "Jun 4, 2021",
-    readTime: "3 min read",
-    description: "See how Swift's protocol-oriented programming makes building objects easier and more efficient for developers.",
-    slug: "swift-protocols",
-    category: "iOS"
+    title: "How JavaScript Works: Introduction to Graphs and Trees",
+    date: "Sep 30, 2021",
+    readTime: "12 min read",
+    description: "Explore Graphs and Trees data structures, their types, and practical implementations in JavaScript applications.",
+    slug: "graphs-and-trees",
+    category: "Data Structures"
   },
   {
-    title: "5 top Go web frameworks",
-    date: "Apr 3, 2025",
-    readTime: "15 min read",
-    description: "Looking for the best Go frameworks? Compare the top 8 Go web frameworks for 2025, including Gin, Fiber, Echo, and Beego, with pros, cons, and performance insights.",
-    slug: "go-web-frameworks",
-    category: "Go"
+    title: "How JavaScript Works: Arrays vs Hash Tables",
+    date: "Sep 23, 2021",
+    readTime: "9 min read",
+    description: "Compare Arrays and Hash Tables, their performance characteristics, and when to use each in JavaScript applications.",
+    slug: "arrays-vs-hash-tables",
+    category: "Data Structures"
   },
   {
     title: "Creating Duplex streams in Node.js",
@@ -129,12 +185,12 @@ export const articles: Article[] = [
     category: "Node.js"
   },
   {
-    title: "What is railway oriented programming?",
-    date: "Dec 16, 2020",
-    readTime: "4 min read",
-    description: "This guide explains railway oriented programming in simple terms and shows you how to more efficiently approach error handling in your codebase.",
-    slug: "railway-oriented-programming",
-    category: "Programming Concepts"
+    title: "How JavaScript Works: Dockerizing a Node.js Application",
+    date: "Jul 22, 2021",
+    readTime: "7 min read",
+    description: "Learn how to containerize your Node.js applications using Docker, including best practices for development, testing, and deployment.",
+    slug: "dockerizing-nodejs",
+    category: "DevOps"
   },
   {
     title: "Grand Central Dispatch Tutorial",
@@ -142,6 +198,38 @@ export const articles: Article[] = [
     readTime: "3 min read",
     description: "With Grand Central Dispatch, learn how to execute heavy task operations in the background, keeping main threads running smoothly.",
     slug: "grand-central-dispatch",
+    category: "iOS"
+  },
+  {
+    title: "How JavaScript Works: High-Performing Code + 8 Optimization Tips",
+    date: "Jun 24, 2021",
+    readTime: "7 min read",
+    description: "Discover common performance pitfalls and learn 8 practical tips to optimize your JavaScript code for better performance.",
+    slug: "javascript-optimization-tips",
+    category: "JavaScript"
+  },
+  {
+    title: "How JavaScript Works: Design Patterns + 4 Best Practices",
+    date: "Jun 17, 2021",
+    readTime: "8 min read",
+    description: "Explore creational, structural, and behavioral design patterns in JavaScript, along with best practices for implementation.",
+    slug: "javascript-design-patterns",
+    category: "Programming Concepts"
+  },
+  {
+    title: "How JavaScript Works: Functional Style and Comparison",
+    date: "Jun 10, 2021",
+    readTime: "6 min read",
+    description: "Understand functional programming in JavaScript and how it compares to other programming paradigms.",
+    slug: "javascript-functional-style",
+    category: "Programming Concepts"
+  },
+  {
+    title: "Understanding Protocols in Swift",
+    date: "Jun 4, 2021",
+    readTime: "3 min read",
+    description: "See how Swift's protocol-oriented programming makes building objects easier and more efficient for developers.",
+    slug: "swift-protocols",
     category: "iOS"
   },
   {
@@ -175,6 +263,14 @@ export const articles: Article[] = [
     description: "V, aka 'Vlang,' has a more readable and simpler syntax than many other frameworks, making it clean and easy to use.",
     slug: "vlang-introduction",
     category: "Programming Languages"
+  },
+  {
+    title: "What is railway oriented programming?",
+    date: "Dec 16, 2020",
+    readTime: "4 min read",
+    description: "This guide explains railway oriented programming in simple terms and shows you how to more efficiently approach error handling in your codebase.",
+    slug: "railway-oriented-programming",
+    category: "Programming Concepts"
   },
   {
     title: "Deno Alternatives to Popular Node Projects",
