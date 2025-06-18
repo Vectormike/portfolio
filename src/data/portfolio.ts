@@ -41,6 +41,12 @@ export const projects: Project[] = [
     link: 'https://github.com/Vectormike/WhispAI'
   },
   {
+    title: 'Smart Research Assistant',
+    description: 'A Python-based research assistant powered by RAG (Retrieval-Augmented Generation) for managing and querying research notes. Features include vector embeddings, efficient data storage, and intelligent note retrieval.',
+    technologies: ['Python', 'RAG', 'OpenAI', 'Vector Embeddings', 'Data Management'],
+    link: 'https://github.com/Vectormike/smart-research-assistant'
+  },
+  {
     title: 'Mietz - Property Management Platform',
     description: 'Developed an OCR solution for tenant verification and a scheduling system for apartment viewings. Built with AWS Lambda and serverless architecture, reducing verification time from days to seconds.',
     technologies: ['Node.js', 'AWS Lambda', 'TypeScript', 'OCR', 'Serverless'],
